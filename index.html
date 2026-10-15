@@ -2,71 +2,169 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Fan2Vita | Les Fans de Team Vitality</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Fan2Vita est le site communautaire des supporters de Team Vitality. Retrouvez les actualités esport, la présentation des équipes et l'espace des fans.">
+  <title>Team Vitality CS2 | ZywOo, Matchs & Palmarès Esport - Fan2Vita</title>
+  <meta name="description" content="Plongez au cœur de Team Vitality CS2 : suivez les stats de ZywOo Vitality, découvrez le palmarès esport du Major et les derniers matchs des Abeilles.">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-dark text-white">
 
+  <!-- En-tête et navigation -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Vitality</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">L'équipe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Résultats</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Tournois Remportés</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Events à venir</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary" aria-label="Navigation principale">
+      <div class="container">
+        <a class="navbar-brand text-warning fw-bold" href="index.html">Fan2Vita</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="roster.html">Roster CS2</a></li>
+            <li class="nav-item"><a class="nav-link" href="palmares.html">Palmarès</a></li>
+            <li class="nav-item"><a class="nav-link" href="anciens.html">Hall of Fame</a></li>
+            <li class="nav-item"><a class="nav-link" href="tournois.html">Calendrier</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
+  <!-- Contenu central -->
+  <main class="container my-4">
 
-    <section id="accueil" class="container py-5" aria-labelledby="titre-principal">
+    <!-- H1 unique avec mots-clés -->
+    <header class="mb-4">
+      <h1 class="text-warning">Team Vitality CS2 : Actualités, ZywOo et Palmarès Esport de la Ruche</h1>
+      <p class="lead">
+        Bienvenue sur Fan2Vita, un site de fans consacré à l'équipe Counter-Strike de Team Vitality. Retrouvez ici des repères sur les joueurs, les grands résultats et les compétitions suivies par la Ruche.
+      </p>
+    </header>
+
+    <!-- Section 1 : Présentation -->
+    <section class="mb-4" aria-labelledby="sec-presentation">
+      <h2 id="sec-presentation" class="h4 text-warning">Présentation de l'équipe</h2>
       <div class="row align-items-center">
-        <div class="col-lg-8">
-          <h1 id="titre-principal" class="display-5 fw-bold mb-3">Bienvenue chez les fans de Vitality</h1>
-          <p class="lead">
-            Retrouvez les dernières actualités et partagez votre passion avec la communauté des supporters de la Ruche.
+        <div class="col-md-7">
+          <p>
+            Team Vitality est une organisation française d'esport fondée en 2013. Sa section Counter-Strike s'est fait connaître à partir de 2018 et a notamment remporté le BLAST.tv Paris Major 2023. Cette page rassemble des informations de présentation sur l'équipe et son parcours ; les effectifs et les résultats évoluent au fil des saisons.
           </p>
           <p>
-            Fondé en 2013, le club français <strong>Team Vitality</strong> brille sur la scène internationale esport. À travers Fan2Vita, nous rassemblons les passionnés de Counter-Strike 2, Rocket League et League of Legends pour célébrer les victoires et soutenir nos joueurs dans chaque compétition.
+            <a href="roster.html" class="btn btn-warning btn-sm">Consulter l'effectif complet du Roster CS2</a>
           </p>
-          <p>
-            <a href="#actualites" class="btn btn-warning me-2">Voir les actualités</a>
-            <a href="#supporters" class="btn btn-outline-light">Rejoindre les fans</a>
-          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <picture>
+            <source srcset="img/team-vitality-cs2-logo-officiel.webp" type="image/webp">
+            <img src="img/team-vitality-cs2-logo-officiel.jpg" alt="Logo officiel de Team Vitality CS2" width="600" height="400" class="img-fluid rounded border border-secondary">
+          </picture>
         </div>
       </div>
     </section>
 
-  <footer class="bg-dark text-light border-top border-secondary py-4 mt-5">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <p class="mb-0">&copy; <span id="annee">2026</span> Fan2Vita. Tous droits réservés.</p>
-      <p class="mb-0 text-muted small">Site de supporters passionnés de Team Vitality.</p>
+    <!-- Section 2 : Matchs récents -->
+    <section class="mb-4" aria-labelledby="sec-matchs">
+      <h2 id="sec-matchs" class="h4 text-warning">Derniers résultats et prochain Vitality CS2 match</h2>
+      <div class="table-responsive">
+        <table class="table table-dark table-striped table-bordered align-middle">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Tournoi</th>
+              <th>Adversaire</th>
+              <th>Score</th>
+              <th>Résultat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>06/10/2026</td>
+              <td>IEM Cologne 2026</td>
+              <td>FaZe Clan</td>
+              <td>3 - 1</td>
+              <td><span class="badge bg-success">Gagné</span></td>
+            </tr>
+            <tr>
+              <td>18/10/2026</td>
+              <td>Vitality ESL Pro League</td>
+              <td>Natus Vincere</td>
+              <td>-</td>
+              <td><span class="badge bg-warning text-dark">Prochain match</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        <a href="tournois.html" class="text-warning">Voir le calendrier complet des tournois</a>
+      </p>
+    </section>
+
+    <!-- Section 3 : Rubriques avec <article> et <h3> sous <h2> -->
+    <section class="mb-4" aria-labelledby="sec-rubriques">
+      <h2 id="sec-rubriques" class="h4 text-warning">Les rubriques du site</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <article class="card bg-black border-secondary p-3 h-100">
+            <h3 class="h5 text-warning">1. Roster CS2</h3>
+            <p class="small">
+              Découvrez les joueurs présentés sur le site, leurs rôles en jeu et quelques repères pour comprendre la complémentarité d'une équipe professionnelle.
+            </p>
+            <a href="roster.html" class="btn btn-outline-warning btn-sm mt-auto">Fiches des joueurs du Roster</a>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card bg-black border-secondary p-3 h-100">
+            <h3 class="h5 text-warning">2. Palmarès et Histoire</h3>
+            <p class="small">
+              Revenez sur des étapes marquantes du parcours de Vitality, dont son sacre au Major de Paris en 2023, et consultez une sélection de titres.
+            </p>
+            <a href="palmares.html" class="btn btn-outline-warning btn-sm mt-auto">Explorer les trophées remportés</a>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card bg-black border-secondary p-3 h-100">
+            <h3 class="h5 text-warning">3. Hall of Fame</h3>
+            <p class="small">
+              Cette rubrique rend hommage à plusieurs joueurs et membres du staff qui ont contribué aux différentes périodes de l'équipe Counter-Strike.
+            </p>
+            <a href="anciens.html" class="btn btn-outline-warning btn-sm mt-auto">Découvrir les anciens membres</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenu secondaire <aside> -->
+    <aside class="p-3 bg-black border border-secondary rounded mb-4" aria-labelledby="sec-liens">
+      <h2 id="sec-liens" class="h5 text-warning">Liens externes et communauté</h2>
+      <a href="https://discord.com" rel="ugc" target="_blank" class="btn btn-outline-light btn-sm me-2">Discord des supporters</a>
+      <a href="https://shop.vitality.gg" rel="sponsored" target="_blank" class="btn btn-warning btn-sm">Boutique officielle</a>
+    </aside>
+
+  </main>
+
+  <!-- Bas de page -->
+  <footer class="bg-black text-center text-muted py-3 border-top border-secondary">
+    <div class="container">
+      <nav aria-label="Navigation secondaire">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item"><a href="index.html" class="text-warning text-decoration-none">Accueil</a></li>
+          <li class="list-inline-item">&bull;</li>
+          <li class="list-inline-item"><a href="roster.html" class="text-light text-decoration-none">Roster CS2</a></li>
+          <li class="list-inline-item">&bull;</li>
+          <li class="list-inline-item"><a href="palmares.html" class="text-light text-decoration-none">Palmarès</a></li>
+          <li class="list-inline-item">&bull;</li>
+          <li class="list-inline-item"><a href="anciens.html" class="text-light text-decoration-none">Hall of Fame</a></li>
+          <li class="list-inline-item">&bull;</li>
+          <li class="list-inline-item"><a href="tournois.html" class="text-light text-decoration-none">Tournois</a></li>
+        </ul>
+      </nav>
+      <p class="small mb-0">
+        Données sur <a href="https://www.hltv.org" rel="nofollow" target="_blank" class="text-muted">HLTV</a> &copy; 2026 Fan2Vita
+      </p>
     </div>
   </footer>
 
-  <script src="bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
